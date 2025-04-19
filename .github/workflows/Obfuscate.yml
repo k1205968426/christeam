@@ -31,7 +31,7 @@ jobs:
       - name: Download and extract latest BPB worker
         run: |
           # 方法1：强制指定输出文件名
-          wget -O bpb-worker.zip https://github.com/bia-pain-bache/BPB-Worker-Panel/releases/latest/download/unobfuscated-worker.zip
+          wget -O bpb-worker.zip https://github.com/bia-pain-bache/BPB-Worker-Panel/releases/latest/download/worker.zip
           unzip -o bpb-worker.zip
           mv _worker.js origin.js
           rm bpb-worker.zip
