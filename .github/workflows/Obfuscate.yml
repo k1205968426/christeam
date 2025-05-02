@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: "0 12 * * *"
+    - cron: "0 0 12 * *"
 
 permissions:
   contents: write
@@ -44,7 +44,7 @@ jobs:
           --rename-globals true \
           --string-array true \
           --string-array-encoding 'base64' \
-          --string-array-threshold 0.99 \
+          --string-array-threshold 0.95 \
           --transform-object-keys true \
           --self-defending false \
           --simplify true
